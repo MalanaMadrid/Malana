@@ -33,13 +33,22 @@ body{
     text-align: center;
 }
 
-.logo {
-    position: absolute; /* Posiciona el texto sobre la imagen */
-    color: white; /* Texto blanco para visibilidad */
-    top: -5%;
-    left: 44%;
-    height: 300px;
-    width: 300px;
-    z-index: 999;
+.imagen-extra{
+    display: none;
 }
-  
+
+@media (min-width: 1550px) {
+    /* Mostrar la imagen extra en pantallas grandes */
+    .banner {
+        display: flex; /* Se mostrará usando flexbox */
+        width: 50vw; /* Ajustamos el ancho para que haya tres imágenes en total */
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .imagen-extra{
+        display: flex; /* Se mostrará usando flexbox */
+        width: 50vw; /* Ajustamos el ancho para que haya tres imágenes en total */
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
