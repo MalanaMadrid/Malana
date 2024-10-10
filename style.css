@@ -1,9 +1,8 @@
 .banner{
-    width: 50%;
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    display: block;
 }
 
 body{
@@ -30,7 +29,7 @@ body{
     left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Asegura el centrado exacto */
     color: white; /* Texto blanco para visibilidad */
-    font-size: 4em; /* Tamaño de fuente grande */
+    font-size: 2em; /* Tamaño de fuente grande */
     text-align: center;
 }
 
