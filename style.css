@@ -1,0 +1,46 @@
+.banner{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+body{
+    background-color: #fcf6f1;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between; /* Distribuye espacio entre imágenes */
+    flex-wrap: nowrap; /* Evita que las imágenes se muevan a la siguiente línea */
+    align-items: stretch; /* Estira las imágenes para que ocupen el 100% del alto */
+    height: 100vh; /* Ocupa el 100% del alto de la ventana */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   
+.texto-sobre-imagen {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    top: 15%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Asegura el centrado exacto */
+    color: white; /* Texto blanco para visibilidad */
+    font-size: 4em; /* Tamaño de fuente grande */
+    text-align: center;
+}
+
+.logo {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    color: white; /* Texto blanco para visibilidad */
+    top: -5%;
+    left: 44%;
+    height: 300px;
+    width: 300px;
+    z-index: 999;
+}
+  
